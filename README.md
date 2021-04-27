@@ -6,7 +6,7 @@ Running the one-dimensional active interface tracking model is accomplished by c
 [Temperature, Salinity, Liquid_Fraction, Ice_Properties]=Active_Track_Zolotov_mod_int(TBOTTOM, SBOTTOM, INTERFACE_DEPTH, T_END, RHO_BR, DT)
 
 Where,
-TBOTTOM is the temperature of the underlying fluid reservoir, in Kelvin.
+TBOTTOM is the temperature of the underlying fluid reservoir, in Kelvin. /n
 SBOTTOM is the salinity (ppt) of the underlying fluid reservoir.
 INTERFACE_DEPTH is the depth below the surface that the run is started at (in meters). This is used to calculate the heat flux at the top of the domain when using a Neumann boundary condition. i.e. for a surface temperature of 100 K and an ocean/reservoir temperature of 273 K, if you are interested in calculating the solidification of a water body 100 m below the surface, a thermal gradient of 2.73 K/m is applied to the top of the domain. This assumes a conductive equilibrium profile exists above the fluid, which is typical in ice systems that are not undergoing solid state convection.
 T_END is the end time of the run (in seconds). All runs start at zero seconds and will iterate until T_END is reached.
